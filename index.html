@@ -15,7 +15,7 @@
 			.navbar-inverse .navbar-nav>li>a {color:white;font-size:2em;}
 			p#language{text-align:right;font-size:1em}
 		</style>		
-		
+<!-- this is the navigation bar -->
 		<nav class="navbar navbar-inverse">
 		  <div class="container-fluid">
 			  <p id="language">
@@ -38,8 +38,9 @@
 				<li><a href="index.html">Home</a></li>
 				<li><a href="research.html">Research </a></li>
 				<li><a href="PIinfo.html">PI information</a></li>
+				<li><a href="funding.html">Funding Support</a></li>
 				<li><a href="team.html">Our Team</a></li>
-				  <li><a href="career.html">Career</a></li>
+				<li><a href="career.html">Career</a></li>
 				<li><a href="publication.html">Publication</a></li>
 				<li><a href="contact.html">Contact</a></li>
 			  </ul>
@@ -50,27 +51,54 @@
 
 
 		<style type="text/css">
-	.jumbotron p{
-		border-left:15px solid grey;
-		padding-left:30px;
-		margin:2em;
-		font-family: cursive;
-	}
+			#welcome{
+				border-left:15px solid grey;
+				padding-left:30px;
+				margin:2em;
+				color:black;
+				font-family: cursive;
+				line-height: 2.5;
+			}
+			.image {
+			  width: 100%;
+			  height:500px;
+			  background-size: cover;
+			  background-position: center;
+			}
+			.imagewelcome{background-image: url("https://images.unsplash.com/photo-1567731359739-ac5cd0dc2cd2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80");
+			}
 
-}
-</style>
+			#labnews{
+				border: thick double #32a1ce;
+				font-size:2rem;
+			}
 
-
+		</style>
+<!-- this jumbotron is for the marmoset monkey eating a banana -->
+<div class="jumbotron image imagewelcome"></div>
+<!-- This jumbotron is for the welcome message from the lab -->
 <div class="jumbotron">
   <div class="container">
-	<h1><strong>Welcome to Tsunada's Lab!</strong></h1>
-	<div>
-		<p>  The long term research goal of the Tsunada Laboratory is to reveal the behavioral and neural mechanisms of vocal communication and its disorders. Vocal communication plays an important role in maintaining group cohesion and social bonds of both humans and many animal species. A key feature of human conversational communication, however, is our ability to flexibly modify and control our speech depending upon the communicative context, taking into account recent history, conversational contents, as well as the specific speakers and listeners involved. Despite a long history of behavioral and neural studies on vocal communication, it remains poorly understood what behavioral and neural mechanisms enable us to control vocal interactions according to the communicative context. We aim to demonstrate the underlying behavioral and neural mechanisms of normal social vocal communication using a highly vocal primate species, marmoset monkey。A better understanding of the mechanisms of normal vocal communication will inform our understanding of how and why patients with mental (e.g., schizophrenia) or developmental (e.g., autism spectrum disorder) disorders have problems in vocal communication, thereby contributing to develop new therapeutic approaches to improve their communication.</p>
-  		<p>
+	<div id="welcome">
+		<h1><strong>Welcome to Tsunada's Lab!</strong></h1>
+		<p>Tsunada Lab aims to understand:</p>
+		<p>1) how primates flexibly control and adapt their vocal behaviors during social communication and</p>
+		<p>2) how the brain circuitry performs the computations that mediate this ability. </p>
+		<p>We address these questions by applying neurophysiological techniques to freely-communicating marmoset monkeys. We hope our studies for vocal communication in normal subjects will contribute to a better understanding of how and why many patients with mental or developmental disorders have problems in vocal communication.</p>
 	 </div>
-	  <a class="btn btn-primary btn-lg" href="/research" role="button"><strong>Learn more...</strong></a>
+	  <a class="btn btn-primary btn-lg" href="research.html" role="button"><strong>Learn more...</strong></a>
   </div>
 </div>
+<!-- This container contains top news in the lab -->
+<div class="container" id="labnews">
+	<h1>Lab News</h1>
+
+	<p>2020.4 Joji’s paper with Dr. Eliades@UPenn was published in the Journal of Neuroscience!<a href="news/04a2020.html">Read more...</a></p>
+	<p>2020.4 Yuyan joined the lab!<a href="news/04b2020.html"> Read more...</a></p>
+	<p>2020.3 Joji received the Brain Science Foundation Research Grant (Japan)<a href="news/03a2020.html"> Read more...</a></p>
+	<p>2020.3 Tsunada Lab at CIBR was launched.<a href="news/03b2020.html">Read more...</a></p>
+</div>
+
 
 <p>
 	made on 2020
